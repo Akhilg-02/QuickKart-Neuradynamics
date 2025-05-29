@@ -60,27 +60,27 @@ quickkart/
 │   │   ├── ProductList.jsx  		# Main product listing page
 │   │   ├── ProductDetail.jsx 		# Individual product details
 │   │   └── FavoritesPage.jsx 		# Favorites collection page
-├── redux/
+│   ├── redux/
 │   ├── app/
 │   └── store.js             	# Redux store setup
-├── slices/
+│   ├── slices/
 │   ├── products/            	# Products slice
 │   │   └── productsSlice.js
 │   ├── filters/             	# Filters slice
 │   │   └── filtersSlice.js
 │   └── favorites/           	# Favorites slice
 │       └── favoritesSlice.js
-├── __tests__/
+│   ├──  __tests__/
 │   ├── productsSlice.test.js
-│   ├── filtersSlice.test.js
+│   ├── filtersSlice.test.js 
 │   └── favoritesSlice.test.js
 │   └── ProductCard.test.jsx
 │   └── FilterBar.test.jsx
 │   └── FavoriteButton.test.jsx
 │   └── UserFlow.test.jsx
-│   ├── App.jsx              # Main application component
-│   ├── main.jsx             # Application entry point
-│   └── index.css            # Global styles
+├── App.jsx                   # Main application component
+├── main.jsx                  # Application entry point
+├── index.css                 # Global styles
 ├── package.json
 └── README.md
 ```
