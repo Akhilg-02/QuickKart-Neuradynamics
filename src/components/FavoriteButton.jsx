@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addFavorite, removeFavorite } from '../features/favorites/favoritesSlice';
+import { addFavorite, removeFavorite } from '../redux/slices/favorites/favoritesSlice';
 import { Heart } from 'lucide-react';
 
 const FavoriteButton = ({ product }) => {
@@ -18,10 +18,11 @@ const FavoriteButton = ({ product }) => {
 
   return (
     <button
+      aria-label="Add to Favorites"
       onClick={handleClick}
       className={`px-4 py-2.5 rounded-lg font-medium text-sm w-full sm:w-auto transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-md hover:shadow-lg ${isFavorited
-          ? 'bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white'
-          : 'bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white'
+        ? 'bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white'
+        : 'bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white'
         }`}
     >
       <span className="flex items-center justify-center gap-2">

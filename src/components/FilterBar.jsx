@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setSearchQuery, setCategory, setSortOrder } from '../features/filters/filtersSlice';
+import { setSearchQuery, setCategory, setSortOrder } from '../redux/slices/filters/filtersSlice';
 import { Search, ChevronDown } from 'lucide-react';
 
 const FilterBar = () => {
@@ -25,7 +25,7 @@ const FilterBar = () => {
           </div>
           <input
             type="text"
-            placeholder="Search products..."
+            placeholder="Search"
             className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -44,7 +44,7 @@ const FilterBar = () => {
             <option value="electronics">Electronics</option>
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-            <ChevronDown className="w-4 h-4 text-gray-400"/>
+            <ChevronDown className="w-4 h-4 text-gray-400" />
           </div>
         </div>
 
@@ -59,7 +59,7 @@ const FilterBar = () => {
             <option value="highToLow">Price: High to Low</option>
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-            <ChevronDown className="w-4 h-4 text-gray-400"/>
+            <ChevronDown className="w-4 h-4 text-gray-400" />
           </div>
         </div>
       </div>

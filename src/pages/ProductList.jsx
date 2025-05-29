@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../features/products/productsSlice';
+import { fetchProducts } from '../redux/slices/products/productsSlice';
 import ProductCard from '../components/ProductCard';
 import FilterBar from '../components/FilterBar';
 import { TriangleAlert, Search } from 'lucide-react';
